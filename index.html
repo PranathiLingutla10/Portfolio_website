@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatibale" cpntent="IE-edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/81fe08f995.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Projects</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>CSE Student</p>
+            <h1>Hi, I'm <span>Pranathi</span> CSE|Cybersecurity Student<br> at Sastra Deemed University</h1>
+        </div>
+    </div>
+
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a dedicated student with a strong passion for emerging technologies. I actively pursue knowledge in areas such as Artificial Intelligence, Web Development, and Cybersecurity, and am always eager to explore innovative solutions and stay updated with the latest advancements.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links"onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('Certifications')">Certifications</p>
+                </div>
+                <div class="tab-contents active-tab" id="Education">
+                    <ul>
+                        <li><span>2022-2026</span><br>BTECH-Sastra University</li>
+                        <li><span>2020-2022</span><br>class-12th,Srichaitanya College,Hyderabad</li>
+                        <li><span>2020</span><br>class-10th,Srichaitanya School,Tadipatri</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"id="Skills" >
+                    <ul>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>Programming skills</span><br>C,C++,Python,Java,HTML,CSS,JS,DSA,SQL</li>
+                        <li><span>Core CS areas</span><br>like Artificial Intelligence and Cybersecurity</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"id="Certifications">
+                    <ul>
+                        <li><span>Web Development</span><br>Certication from Udemy</li>
+                        <li><span>Introduction to Cybersecurity</span><br>Internship completion certificate from YHills</li>
+                        <li><span>Artificial Intelligence</span><br>certification from Infosys</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+            <div>
+                <h2>BC-IDSs</h2>
+                <p>Blockchain based intrusion detection system for blacklisting IP addresses and storing it in BlockChain</p>
+                <a href="images/Blockchain-Based Intrusion Detection System (IDS).pdf">learn more</a>
+            </div>
+            <div>
+                <h2>Autism Prediction </h2>
+                <p> To predict Autism Spectrum Disorder using demographic and behavioral screening data.</p>
+                <a href="images/Autism Prediction using Machine Learning.pdf">learn more</a>
+            </div>
+            <div>
+                <h2>SQL Injection </h2>
+                <p>Exploited SQL Injection using SQLmap on Kali Linux to extract user data.</p>
+                <a href="images/SQL Injection.pdf">learn more</a>
+            </div>
+            <div>
+                <h2>Restaurant Portfolio Website</h2>
+                <p>A responsive website showcasing a restaurant's menu, ambiance, and customer reviews.</p>
+                <a href="images/Restaurant Portfolio Website.pdf">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/blockchainids.png" alt="Blockchain IDS">
+                <div class="layer">
+                    <h3>Blockchain IDS</h3>
+                    <p>This work contains the blacklisting IP address that are stored in Blockchain</p>
+                    <a href="https://github.com/PranathiLingutla10/BC-IDS"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/autism.png" alt="Autism Prediction">
+                <div class="layer">
+                    <h3>Autism Prediction</h3>
+                    <p>To predict Autism Spectrum Disorder using demographic and behavioral screening data.</p>
+                    <a href="https://github.com/PranathiLingutla10/Autism-Prediction"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/sqlinjection.png" alt="SQL Injection">
+                <div class="layer">
+                    <h3>SQL Injection</h3>
+                    <p><br>Exploited SQL Injection using SQLmap on Kali Linux to extract user data.</p>
+                    <a href="https://github.com/PranathiLingutla10/SQL-Injection"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+             <div class="work">
+                <img src="images/Restaurant.jpg" alt="Restaurant Portfolio Website">
+                <div class="layer">
+                    <h3>Restaurant Portfolio Website</h3>
+                    <p><br>A responsive website showcasing a restaurant's menu, ambiance, and customer reviews.</p>
+                    <a href="https://github.com/PranathiLingutla10/Restaurant_portfolio_website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>126157029@sastra.ac.in</p>
+                <p><i class="fa-solid fa-phone"></i>+91 9390436743</p>
+                
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/pranathi-lingutla-85529731b"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/PranathiLingutla10"><i class="fa-brands fa-github"></i></a>
+                    
+                </div>
+                <a href="images/126157029_LingutlaPranathi.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" >
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">Message sent successfully</span>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 Pranathi Lingutla. All rights reserved.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyUQU6QJQ3c65q-BpGSAWShjjOy9r9i0AwnUsYtlsNC5PlXkUpBMLMSeJtH2t9bG2zfcQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){msg.innerHTML = ""}, 5000)
+        form.reset()
+        console.log('Success!', response)
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+
+
+</body>
+
+</html>
